@@ -16,19 +16,19 @@ count_words(){
 
 	echo "Count_Lorem"
         echo "Count_Lorem"
-        wl= grep -c Lorem /Users/calebwang/Desktop/lab_3/sample_text.txt
+        wl= grep -o -i Lorem /Users/calebwang/Desktop/lab_3/sample_text.txt  | wc -l
         echo $wl
 
 	echo "Count_model"
-        wl= grep -c model /Users/calebwang/Desktop/lab_3/sample_text.txt
+        wl= grep -o -i model /Users/calebwang/Desktop/lab_3/sample_text.txt | wc -l
         echo $wl
 
 	echo "Count_Ipsum"
-        wl= grep -c Ipsum /Users/calebwang/Desktop/lab_3/sample_text.txt
+        wl= grep -o -i Ipsum /Users/calebwang/Desktop/lab_3/sample_text.txt | wc -l
         echo $wl
 
         echo "Count_will"
-        wl= grep -c will /Users/calebwang/Desktop/lab_3/sample_text.txt
+        wl= grep -o -i will /Users/calebwang/Desktop/lab_3/sample_text.txt | wc -l
         echo $wl
 }
 
